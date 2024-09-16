@@ -1,0 +1,9 @@
+[Unit]
+Description="Run arch_updater.service 15min after boot"
+
+[Timer]
+OnBootSec=15min
+Unit=arch_updater.service
+
+[Install]
+WantedBy=graphical.target

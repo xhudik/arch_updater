@@ -1,0 +1,5 @@
+[Unit]
+Description="ArchLinux updater"
+
+[Service]
+ExecStart=/usr/local/bin/arch_updater.sh
