@@ -21,5 +21,11 @@ Change `Asus Zen8` hot-spot name to your's in `arch_updater.sh`
 5. `sudo systemctl enable arch_updater.timer` activated on boot
 
 ## Logs
-`journalctl -u arch_updater.service`
+`journalctl --no-pager -u arch_updater.service`
+
+
+## Todo
+* enable more blocking sw (Firefox now)
+* rewrite to python (bash is becoming hard to read)
+* use variable for hot-spot name
 
