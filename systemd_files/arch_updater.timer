@@ -1,10 +1,10 @@
 [Unit]
-Description="Run arch_updater.service daily at 11:00"
+Description="Run arch_updater.service after reboot"
 
 [Timer]
-OnCalendar=*-*-* 11:00
-#OnBootSec=15min
+#OnCalendar=*-*-* 11:00
+OnBootSec=10sec
 Unit=arch_updater.service
 
 [Install]
-WantedBy=graphical.target
+WantedBy=timers.target
