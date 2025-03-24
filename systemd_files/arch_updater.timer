@@ -3,7 +3,7 @@ Description="Run arch_updater.service after reboot"
 
 [Timer]
 #OnCalendar=*-*-* 11:00
-OnBootSec=30sec
+OnBootSec=120sec
 Unit=arch_updater.service
 
 [Install]
